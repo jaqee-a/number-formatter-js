@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="value" />
+    <input type="text" name="" id="mask" />
+    <h3 id="output">Result :</h3>
+  </body>
+  <script src="../lib/number-formatter.js"></script>
+  <script>
+    let value = document.querySelector("#value");
+    let mask = document.querySelector("#mask");
+    let output = document.querySelector("#output");
+
+    [value, mask].forEach((element) => {
+      element.addEventListener("input", update);
+    });
+
+    function update() {
+      output.innerHTML = `Result : ${NumberFormatter.formatFromPattern(
+        value.value,
+        mask.value,
+        {
+          separator: "'",
+        }
+      )}`;
+    }
+  </script>
+</html>

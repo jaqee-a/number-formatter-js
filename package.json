@@ -1,0 +1,32 @@
+{
+  "name": "number-formatter-js",
+  "version": "1.0.1",
+  "description": "A Standalone Javascript Number Formatter",
+  "main": "lib/number-formatter.js",
+  "scripts": {
+    "build": "tsc && browserify lib/number-formatter.esm.js -o lib/number-formatter.js --standalone NumberFormatter",
+    "test": "node test/test.js"
+  },
+  "repository": "https://github.com/MohDe31/number-formatter-js.git",
+  "author": "Bouderbala Mohammed Amine",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "browserify": "^17.0.0"
+  },
+  "bugs": "https://github.com/MohDe31/number-formatter-js/issues",
+  "docs": "",
+  "files": [
+    "lib/number-formatter.esm.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "number",
+    "formatter",
+    "money",
+    "js-number-formatter",
+    "number-formatter",
+    "currency"
+  ]
+}
