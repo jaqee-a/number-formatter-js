@@ -48,17 +48,18 @@ Link to a jsfiddle to help you get started: https://jsfiddle.net/MohDe/p8ymc1vr/
 
 - If you want to use Zeros in the prefix you should change the PatternConfig for example:
 
-````js
+```js
 let config = parsePattern("+0,000.000$");
 config.prefix = "(000)";
 formatFromConfig(1000, config); // output: (000)1,000.000$
 ```
 
-
 ## Installation
-Using npm
+
+### Using npm
+
     npm install --save number-formatter-js
 
-Using yarn
+### Using yarn
+
     yarn add number-formatter-js
-````
