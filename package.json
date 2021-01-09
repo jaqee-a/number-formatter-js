@@ -1,10 +1,12 @@
 {
   "name": "number-formatter-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Standalone Javascript Number Formatter",
   "main": "lib/number-formatter.js",
   "scripts": {
-    "build": "tsc && browserify lib/number-formatter.esm.js -o lib/number-formatter.js --standalone NumberFormatter",
+    "build": "npm run tsc && npm run browserify",
+    "tsc": "tsc",
+    "browserify": "browserify lib/number-formatter.js -o lib/number-formatter.js --standalone NumberFormatter",
     "test": "node test/test.js"
   },
   "repository": "https://github.com/MohDe31/number-formatter-js.git",
@@ -18,7 +20,7 @@
   "bugs": "https://github.com/MohDe31/number-formatter-js/issues",
   "docs": "",
   "files": [
-    "lib/number-formatter.esm.js",
+    "lib/number-formatter.js",
     "index.d.ts"
   ],
   "keywords": [
