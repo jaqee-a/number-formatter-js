@@ -1,6 +1,6 @@
 # NFJS (NumberFormatter JS)
 
-[![Build Status](https://travis-ci.com/MohDe31/number-formatter-js.svg?branch=master)](https://travis-ci.com/MohDe31/number-formatter-js)
+[![Build Status](https://travis-ci.com/MohDe31/number-formatter-js.svg?branch=master)](https://travis-ci.com/github/MohDe31/number-formatter-js)
 
 ## Introduction
 
