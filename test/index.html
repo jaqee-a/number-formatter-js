@@ -10,7 +10,7 @@
     <input type="text" name="" id="mask" />
     <h3 id="output">Result :</h3>
   </body>
-  <script src="../lib/number-formatter.js"></script>
+  <script src="../lib/nfj.min.js"></script>
   <script>
     let value = document.querySelector("#value");
     let mask = document.querySelector("#mask");
@@ -25,7 +25,7 @@
         value.value,
         mask.value,
         {
-          separator: "'",
+          separator: ",",
         }
       )}`;
     }
